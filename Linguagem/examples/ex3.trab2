@@ -1,0 +1,15 @@
+/*
+ O programa abaixo eh invalido (mal-tipado). 
+*/
+
+
+int main () {
+  String f = fat (6);  // incompatibilidade de tipos entre "f" e "fat"
+  return f;
+}
+
+int fat (int n) {
+ if (n)
+   then return n * fat (n-1);
+   else return 1;
+}

@@ -1,0 +1,26 @@
+/*
+O programa abaixo eh invalido (mal-tipado). O typechecker interrompe a analise no primeiro erro.
+Para ver o segundo erro, comente o primeiro erro.
+
+*/
+
+
+int main () {
+  int f = fat (6);  
+  return f;
+}
+
+int fat (int n) {
+
+ bool flag = true;
+ 
+ int produto = 1;
+ do {
+    produto = produto * n;
+    n = n ++ "1";  // "n" nao pode ser int
+ } while (flag)   // a expressao associada ao while deve ser int
+ 
+ return produto;  
+}
+
+

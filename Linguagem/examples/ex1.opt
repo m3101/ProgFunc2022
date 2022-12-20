@@ -1,0 +1,16 @@
+void main () {
+
+  const int x = 2;
+  int y;
+  int z;
+
+   y = x +20+3;
+   
+   if (x)
+     then  y = 200;
+	 else  y = 1000;
+
+  //z = y+1+2;
+  z = 1+2+y;
+ 
+}

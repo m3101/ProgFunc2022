@@ -1,0 +1,21 @@
+/*
+ O programa abaixo eh valido (bem-tipado) e retorna o contexto abaixo ao ser executado:
+([[(Ident "f",720),(Ident "return",720)]],[(Ident "main",int<-()),(Ident "fat",int<-(int n))])
+*/
+
+
+int main () {
+   int f = fat (6);  
+   return f;
+}
+
+int fat (int n) {
+   int produto = 1;
+   do {
+       produto = produto * n;
+       n = n - 1;
+   } while (n)
+   return produto;  
+}
+
+

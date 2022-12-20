@@ -1,0 +1,20 @@
+/*
+ O programa abaixo eh valido (bem-tipado) e retorna o contexto abaixo ao ser executado:
+([[(Ident "c",0),(Ident "z",0),(Ident "soma",210),(Ident "return",210)]],[(Ident "main",int<-())])
+*/
+ 
+int main () {
+
+  int c = 20;
+  int z, soma;
+  soma = 0;
+
+  do
+    {
+     soma = soma + c;
+     c = c - 1;
+    } while (c)
+
+  return soma;
+
+}

@@ -1,0 +1,51 @@
+int main () {
+ int x;
+ int y;
+ int z;
+ int w;
+ x = 4;
+ y = 3+1;
+ if (x-4)
+   then {
+      z = fSoma(x);
+      w = fSoma(y);
+	  if (x) 
+	    then {return z; x = x-1;}
+		else {x = x + 1;}
+	  y = 3;	
+      return z+w;
+	 // x = 3;
+   }
+   else {
+      z = fSoma(x);
+      w = fSoma(y);
+      return z-w;   
+   }
+ 
+}
+
+
+int fSoma(int n)
+{
+int soma;
+soma = 0;
+int c;
+c = n;
+while (c) {
+  soma = soma + c;
+  c = c - 1;
+  if (c)
+    then {
+	       soma = 12;
+	       return soma;
+		  }
+	else { if (c)
+             then {
+			        n = n + c;
+			        return soma;
+				   }
+	         else {return soma;}
+	}
+ }
+
+}
